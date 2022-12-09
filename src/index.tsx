@@ -8,11 +8,12 @@ import './styles/base.scss';
 import './config/liquidConfig';
 import './config/i18nConfig';
 
+import { LiquidContextProvider } from '@modyo-dynamic/modyo-design-system-react';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
 
-const root = ReactDOM.createRoot(document.getElementById('product-details') as Element);
+const root = ReactDOM.createRoot(document.getElementById('widget-name') as Element);
 root.render(
   <React.StrictMode>
     <LiquidContextProvider>

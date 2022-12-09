@@ -2,6 +2,13 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Initial settings for a new widget
+
+1. Rename the `package.json` with the name of widget
+2. Change the root id in `public/index.html` and `src/App.tsx`
+
+**Note: The root id will be unique in your site
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -65,6 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### `pnpm build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

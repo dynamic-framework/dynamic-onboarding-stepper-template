@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export type WidgetState = {
- message: string;
+  message: string;
 };
 
 const initialState = {

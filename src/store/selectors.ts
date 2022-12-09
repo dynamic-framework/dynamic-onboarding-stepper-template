@@ -7,4 +7,3 @@ export const getMessage = createDraftSafeSelector(
   getState,
   (widget) => widget.message,
 );
-
