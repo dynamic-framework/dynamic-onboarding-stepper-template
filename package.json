@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@modyo-dynamic/modyo-design-system": "^0.4.0",
-    "@modyo-dynamic/modyo-design-system-react": "^0.5.0",
-    "@modyo-dynamic/modyo-service-retail": "^0.2.1",
+    "@modyo-dynamic/modyo-design-system": "^0.5.0",
+    "@modyo-dynamic/modyo-design-system-react": "^0.5.1",
+    "@modyo-dynamic/modyo-service-retail": "^0.4.0",
     "@reduxjs/toolkit": "^1.8.4",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -42,7 +42,8 @@
     "react-scripts": "5.0.1",
     "sass": "~1.54.0",
     "typescript": "^4.6.4",
-    "webpack": "^5.64.4"
+    "webpack": "^5.64.4",
+    "@modyo/cli": "^3.1.27"
   },
   "scripts": {
     "start": "craco start",
