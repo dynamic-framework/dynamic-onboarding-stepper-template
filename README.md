@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Initial settings for a new widget
 
 1. Rename the `package.json` with the name of widget
-2. Change the root id in `public/index.html` and `src/index.tsx`
+2. Change the root id in `public/index.html:28` and `src/index.tsx:16`
 
-**Note: The root id will be unique in your site**
+**Note: The `root id` will be unique in your site and it should be written in camelCase.**
 
 ## Available Scripts
 
