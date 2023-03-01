@@ -13,7 +13,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
 
-const root = ReactDOM.createRoot(document.getElementById('widget-name') as Element);
+const root = ReactDOM.createRoot(document.getElementById('widgetName') as Element);
 root.render(
   <React.StrictMode>
     <LiquidContextProvider>
