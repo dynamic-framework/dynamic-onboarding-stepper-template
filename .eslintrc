@@ -14,7 +14,8 @@
     "react/require-default-props": "off",
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
     "react/jsx-curly-spacing": ["error",  { "when": "never", "attributes": { "allowMultiline": false }, "children": true }],
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }]
   },
   "overrides": [
     {
