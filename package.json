@@ -47,7 +47,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "jest --passWithNoTests",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
     "eject": "craco eject",
     "eslint": "eslint src/**/*{.ts,.tsx}",
     "push": "DEBUG=* modyo-cli push --publish"
