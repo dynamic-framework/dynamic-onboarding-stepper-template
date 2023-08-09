@@ -1,4 +1,4 @@
-import { MIcon } from '@modyo-dynamic/modyo-design-system-react';
+import { MIcon } from '@dynamic-framework/ui-react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { useAppSelector } from '../store/hooks';

@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
+import { LiquidContextProvider } from '@dynamic-framework/ui-react';
 
-import '@modyo-dynamic/modyo-design-system/dist/design-system/design-system.css';
+import '@dynamic-framework/ui/dist/css/dynamic-ui.css';
+import '@dynamic-framework/ui-react/dist/css/dynamic-ui-react.css';
 
 import './styles/base.scss';
 import './config/liquidConfig';
 import './config/i18nConfig';
 
-import { LiquidContextProvider } from '@modyo-dynamic/modyo-design-system-react';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store/store';
