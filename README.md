@@ -2,7 +2,7 @@
 ## Requirements:
 - Node@18+
 - npm@9+
-- modyo-cli@3.3.0 or above (`npm i -g @modyo/cli@latest`)
+- @modyo/cli@latest
 
 ## Installation and initial setup
 The best way to install this template is using the [modyo-cli](https://docs.modyo.com/en/platform/channels/cli.html)
