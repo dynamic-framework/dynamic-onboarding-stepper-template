@@ -35,4 +35,6 @@ VERSION=9
 BUILD_DIRECTORY=build
 # The name that will identify your Micro Frontend in Modyo
 WIDGET_NAME=my-project
+# This directive is necessary to safely remove some libraries from the liquid parser
+MODYO_DISABLE_LIQUID_REGEX=raw
 ```
