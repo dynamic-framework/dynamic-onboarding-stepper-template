@@ -1,4 +1,4 @@
-# dynamic-retail-product-detail-template
+# dynamic-react-base-template
 ## Requirements:
 - Node@18+
 - npm@9+
