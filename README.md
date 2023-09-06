@@ -28,7 +28,7 @@ MODYO_ACCOUNT_URL=https://my-org.modyo.cloud/
 # MODYO_SITE_HOST=my-site
 MODYO_SITE_ID=65
 # The token authorizing the deployment, taken from Modyo
-TOKEN=gTGQogW3LkSy4nV9cYtc_hHF7QsUNq01q-12ptFzoW8
+TOKEN=gT0ogW43lSy4nV9cYtc_hH0i_sUNq01q-12ptFzoW8
 # The major version of the Modyo platform where the deployment will take place (8 or 9)
 VERSION=9
 # The name of the directory that contains the bundle of the micro frontend
