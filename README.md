@@ -7,7 +7,7 @@
 ## Installation and initial setup
 The best way to install this template is using the [modyo-cli](https://docs.modyo.com/en/platform/channels/cli.html)
 ```console
-modyo-cli get dynamic-retail-product-detail-template my-project
+modyo-cli get dynamic-react-base-template my-project
 cd my-project
 npm i
 npm run start
