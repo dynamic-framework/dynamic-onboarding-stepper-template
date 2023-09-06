@@ -15,7 +15,7 @@ npm run start
 
 ### Setup
 1. Change the property name in `package.json` to the name of your project
-2. Change the root `id` in `public/index.html:28` and `src/index.tsx:16`
+2. Change the root `id` in `public/index.html:36` and `src/index.tsx:16`
 
 **Note**: The root id should be _unique_ in your site and it should be written in camelCase.
 
