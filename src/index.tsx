@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Provider } from 'react-redux';
 import { LiquidContextProvider } from '@dynamic-framework/ui-react';
 
 import '@dynamic-framework/ui-react/dist/css/dynamic-ui-all.css';
@@ -11,15 +10,12 @@ import './config/i18nConfig';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import store from './store/store';
 
 const root = ReactDOM.createRoot(document.getElementById('widgetName') as Element);
 root.render(
   <React.StrictMode>
     <LiquidContextProvider>
-      <Provider store={store}>
-        <App />
-      </Provider>
+      <App />
     </LiquidContextProvider>
   </React.StrictMode>,
 );
