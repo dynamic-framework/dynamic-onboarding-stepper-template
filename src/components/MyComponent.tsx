@@ -3,13 +3,8 @@ import { DIcon, DButton } from '@dynamic-framework/ui-react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 
-import { useAppSelector } from '../store/hooks';
-import { getMessage } from '../store/selectors';
-
 export default function MyComponent() {
   const { t } = useTranslation();
-  const message = useAppSelector(getMessage);
-
   const [showLogos, setShowLogos] = useState(false);
 
   return (
@@ -20,7 +15,7 @@ export default function MyComponent() {
     )}
     >
       <h3 className="fw-bold">
-        {message}
+        Dynamic Template
       </h3>
       <DButton
         onEventClick={() => setShowLogos((prevState) => !prevState)}
