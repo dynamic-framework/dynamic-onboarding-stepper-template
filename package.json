@@ -47,10 +47,11 @@
   "scripts": {
     "start": "BROWSER=none craco start",
     "build": "craco build",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "test:unit:watch": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --watch",
     "eject": "craco eject",
     "eslint": "eslint src/**/*{.ts,.tsx}",
-    "push": "DEBUG=* modyo-cli push --publish"
+    "push": "DEBUG=* npx @modyo/cli@latest push --publish"
   },
   "browserslist": {
     "production": [
