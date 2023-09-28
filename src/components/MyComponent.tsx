@@ -2,62 +2,78 @@ import { useState } from 'react';
 import { DIcon, DButton } from '@dynamic-framework/ui-react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+import { ReactComponent as ModyoLogo } from './modyoLogo.svg';
+import { ReactComponent as ReactLogo } from './reactLogo.svg';
 
 export default function MyComponent() {
   const { t } = useTranslation();
   const [showLogos, setShowLogos] = useState(false);
 
   return (
-    <div className={classNames(
-      'd-flex flex-column',
-      'align-items-center justify-content-center',
-      'gap-3 py-3',
-    )}
+    <div
+      className={classNames(
+        'd-flex flex-column',
+        'align-items-center justify-content-center',
+        'gap-3 py-3',
+      )}
     >
-      <h3 className="fw-bold">
-        Dynamic Template
-      </h3>
+      <h3 className="fw-bolder">{t('title')}</h3>
+      <p className="fw-medium">
+        Get started by editing
+        {' '}
+        <span className="font-monospace">
+          src/components/MyComponent.tsx
+        </span>
+      </p>
       <DButton
         onEventClick={() => setShowLogos((prevState) => !prevState)}
         text="Click me!"
       />
       {showLogos && (
         <div className="d-flex gap-3 flex-column flex-md-row justify-content-center align-items-center">
-          <img
-            src="https://docs.modyo.com/assets/img/modyo.png"
-            width={200}
-            alt="Modyo Logo"
-          />
-          <DIcon
-            icon="plus"
-            size="3rem"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1024px-React-icon.svg.png"
-            height={150}
-            alt="React Logo"
-          />
+          <ModyoLogo />
+          <DIcon icon="plus" size="3rem" />
+          <ReactLogo />
         </div>
       )}
-      <h5 className="fw-bold">
-        {t('title')}
-      </h5>
-      <p className="d-block text-center">
-        This is an example of a
-        <a
-          href="https://docs.modyo.com/en/widgets/"
-          className="text-secondary mx-1"
-        >
-          widget
-        </a>
-        build with
-        <a
-          href="https://create-react-app.dev/docs/getting-started"
-          className="text-secondary mx-1"
-        >
-          Create React App
-        </a>
-      </p>
+      <hr className="container border border-1" />
+      <div className="container mt-5 text-left">
+        <div className="row">
+          <div className="col">
+            <p className="fs-4">Learn</p>
+            <p className="lead">
+              <a
+                href="https://docs.modyo.com/en/widgets/"
+                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >
+                Get started with Dynamic!
+              </a>
+            </p>
+          </div>
+          <div className="col">
+            <p className="fs-4">Themes</p>
+            <p className="lead">
+              <a
+                href="https://docs.modyo.com/en/dynamic/ui/theming.html"
+                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >
+                Learn how to create a unique look-and-feel!
+              </a>
+            </p>
+          </div>
+          <div className="col">
+            <p className="fs-4">Templates</p>
+            <p className="lead">
+              <a
+                href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
+                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >
+                Explore the fully customizable React-based templates
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
