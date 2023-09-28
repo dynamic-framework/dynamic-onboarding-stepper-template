@@ -21,9 +21,7 @@ export default function MyComponent() {
       <p className="fw-medium">
         Get started by editing
         {' '}
-        <span className="font-monospace">
-          src/components/MyComponent.tsx
-        </span>
+        <span className="font-monospace">src/components/MyComponent.tsx</span>
       </p>
       <DButton
         onEventClick={() => setShowLogos((prevState) => !prevState)}
