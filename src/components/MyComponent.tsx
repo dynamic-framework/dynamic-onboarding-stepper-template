@@ -41,7 +41,7 @@ export default function MyComponent() {
             <p className="fs-4">Learn</p>
             <p className="lead">
               <a
-                href="https://docs.modyo.com/en/widgets/"
+                href="https://docs.modyo.com/en/dynamic/"
                 className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
               >
                 Get started with Dynamic!
