@@ -12,13 +12,12 @@ export default function MyComponent() {
   return (
     <div
       className={classNames(
-        'd-flex flex-column',
+        'd-flex flex-column gap-3',
         'align-items-center justify-content-center',
-        'gap-3 py-3',
       )}
     >
-      <h3 className="fw-bolder">{t('title')}</h3>
-      <p className="fw-medium">
+      <h1 className="fw-bolder">{t('title')}</h1>
+      <p className="h5 text-muted">
         Get started by editing
         {' '}
         <span className="font-monospace">src/components/MyComponent.tsx</span>
@@ -26,50 +25,72 @@ export default function MyComponent() {
       <DButton
         onEventClick={() => setShowLogos((prevState) => !prevState)}
         text="Click me!"
+        size="lg"
       />
       {showLogos && (
-        <div className="d-flex gap-3 flex-column flex-md-row justify-content-center align-items-center">
+        <div className="d-flex gap-3 flex-column flex-md-row justify-content-center align-items-center mt-3">
           <ModyoLogo />
-          <DIcon icon="plus" size="3rem" />
+          <DIcon icon="plus" size="2rem" className="text-muted" />
           <ReactLogo />
         </div>
       )}
-      <hr className="container border border-1" />
-      <div className="container mt-5 text-left">
-        <div className="row">
-          <div className="col">
-            <p className="fs-4">Learn</p>
-            <p className="lead">
-              <a
-                href="https://docs.modyo.com/en/dynamic/"
-                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >
-                Get started with Dynamic!
-              </a>
-            </p>
-          </div>
-          <div className="col">
-            <p className="fs-4">Themes</p>
-            <p className="lead">
-              <a
-                href="https://docs.modyo.com/en/dynamic/ui/theming.html"
-                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >
-                Learn how to create a unique look-and-feel!
-              </a>
-            </p>
-          </div>
-          <div className="col">
-            <p className="fs-4">Templates</p>
-            <p className="lead">
-              <a
-                href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
-                className="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >
-                Explore the fully customizable React-based templates
-              </a>
-            </p>
-          </div>
+      <div className="w-100 row mt-8">
+        <div className="col mb-4">
+          <a
+          href="https://docs.modyo.com/en/widgets/"
+          className="text-decoration-none p-4 card flex-row border h-100"
+          target="_blank"
+          >
+            <DIcon
+              circleSize="calc(var(--bs-icon-component-size) * 1)"
+              hasCircle
+              icon="book"
+              size="30px"
+              theme="secondary"
+            />
+            <div className="ms-3">
+              <p className="fs-5 fw-bold text-dark mb-1">Learn</p>
+              <p className="text-muted">Get started with Dynamic Framework!</p>
+            </div>
+          </a>
+        </div>
+        <div className="col mb-4">
+          <a
+          href="https://docs.modyo.com/en/dynamic/ui/theming.html"
+          className="text-decoration-none p-4 card flex-row border h-100"
+          target="_blank"
+          >
+            <DIcon
+              circleSize="calc(var(--bs-icon-component-size) * 1)"
+              hasCircle
+              icon="brush"
+              size="30px"
+              theme="secondary"
+            />
+            <div className="ms-3">
+              <p className="fs-5 fw-bold text-dark mb-1">Themes</p>
+              <p className="text-muted">Learn how to create a unique look-and-feel!</p>
+            </div>
+          </a>
+        </div>
+        <div className="col mb-4">
+          <a
+          href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
+          className="text-decoration-none p-4 card flex-row border h-100"
+          target="_blank"
+          >
+            <DIcon
+              circleSize="calc(var(--bs-icon-component-size) * 1)"
+              hasCircle
+              icon="layout-text-window"
+              size="30px"
+              theme="secondary"
+            />
+            <div className="ms-3">
+              <p className="fs-5 fw-bold text-dark mb-1">Experiences</p>
+              <p className="text-muted">Explore the fully React-based templates</p>
+            </div>
+          </a>
         </div>
       </div>
     </div>
