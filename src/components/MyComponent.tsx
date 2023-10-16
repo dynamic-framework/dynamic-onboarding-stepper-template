@@ -37,7 +37,7 @@ export default function MyComponent() {
       <div className="w-100 row mt-8">
         <div className="col mb-4">
           <a
-          href="https://docs.modyo.com/en/widgets/"
+          href="https://docs.modyo.com/en/dynamic/"
           className="text-decoration-none p-4 card flex-row border h-100"
           target="_blank"
           >
