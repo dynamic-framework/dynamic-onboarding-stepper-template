@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { DIcon, DButton } from '@dynamic-framework/ui-react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+
 import { ReactComponent as ModyoLogo } from './modyoLogo.svg';
 import { ReactComponent as ReactLogo } from './reactLogo.svg';
 
@@ -23,7 +24,7 @@ export default function MyComponent() {
         <span className="font-monospace">src/components/MyComponent.tsx</span>
       </p>
       <DButton
-        onEventClick={() => setShowLogos((prevState) => !prevState)}
+        onClick={() => setShowLogos((prevState) => !prevState)}
         text="Click me!"
         size="lg"
       />
@@ -37,9 +38,10 @@ export default function MyComponent() {
       <div className="w-100 row mt-8">
         <div className="col mb-4">
           <a
-          href="https://docs.modyo.com/en/dynamic/"
-          className="text-decoration-none p-4 card flex-row border h-100"
-          target="_blank"
+            href="https://docs.modyo.com/en/dynamic/"
+            className="text-decoration-none p-4 card flex-row border h-100"
+            target="_blank"
+            rel="noreferrer"
           >
             <DIcon
               circleSize="calc(var(--bs-icon-component-size) * 1)"
@@ -56,9 +58,10 @@ export default function MyComponent() {
         </div>
         <div className="col mb-4">
           <a
-          href="https://docs.modyo.com/en/dynamic/ui/theming.html"
-          className="text-decoration-none p-4 card flex-row border h-100"
-          target="_blank"
+            href="https://docs.modyo.com/en/dynamic/ui/theming.html"
+            className="text-decoration-none p-4 card flex-row border h-100"
+            target="_blank"
+            rel="noreferrer"
           >
             <DIcon
               circleSize="calc(var(--bs-icon-component-size) * 1)"
@@ -75,9 +78,10 @@ export default function MyComponent() {
         </div>
         <div className="col mb-4">
           <a
-          href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
-          className="text-decoration-none p-4 card flex-row border h-100"
-          target="_blank"
+            href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
+            className="text-decoration-none p-4 card flex-row border h-100"
+            target="_blank"
+            rel="noreferrer"
           >
             <DIcon
               circleSize="calc(var(--bs-icon-component-size) * 1)"
