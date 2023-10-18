@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { DIcon, DButton } from '@dynamic-framework/ui-react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+
 import { ReactComponent as ModyoLogo } from './modyoLogo.svg';
 import { ReactComponent as ReactLogo } from './reactLogo.svg';
 
@@ -23,7 +24,7 @@ export default function MyComponent() {
         <span className="font-monospace">src/components/MyComponent.tsx</span>
       </p>
       <DButton
-        onEventClick={() => setShowLogos((prevState) => !prevState)}
+        onClick={() => setShowLogos((prevState) => !prevState)}
         text="Click me!"
         size="lg"
       />
