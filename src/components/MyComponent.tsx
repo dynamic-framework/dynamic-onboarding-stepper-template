@@ -1,10 +1,11 @@
-import { useState } from 'react';
-import { DIcon, DButton } from '@dynamic-framework/ui-react';
+import { useState /* lazy, Suspense */ } from 'react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+import { DIcon, DButton } from '@dynamic-framework/ui-react';
 
-import { ReactComponent as ModyoLogo } from './modyoLogo.svg';
-import { ReactComponent as ReactLogo } from './reactLogo.svg';
+import MyLogos from './MyLogos';
+
+// const MyLogos = lazy(() => import('./MyLogos'));
 
 export default function MyComponent() {
   const { t } = useTranslation();
@@ -29,11 +30,9 @@ export default function MyComponent() {
         size="lg"
       />
       {showLogos && (
-        <div className="d-flex gap-3 flex-column flex-md-row justify-content-center align-items-center mt-3">
-          <ModyoLogo />
-          <DIcon icon="plus" size="2rem" className="text-muted" />
-          <ReactLogo />
-        </div>
+        // <Suspense fallback={null}>
+        <MyLogos />
+        // </Suspense>
       )}
       <div className="w-100 row mt-8">
         <div className="col mb-4">
