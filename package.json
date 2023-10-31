@@ -62,7 +62,7 @@
     "clear": "node .config/clear.mjs",
     "start": "webpack serve --mode development --config .config/webpack.js",
     "build": "npm run clear && NODE_ENV=production webpack build --mode production --config .config/webpack.js",
-    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests",
     "test:unit:watch": "NODE_OPTIONS=--experimental-vm-modules jest --passWithNoTests --watch",
     "eslint": "eslint src/**/*{.ts,.tsx}",
     "push": "npm run build && npx @modyo/cli@latest push --publish",
