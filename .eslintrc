@@ -15,7 +15,10 @@
     "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
     "react/jsx-curly-spacing": ["error",  { "when": "never", "attributes": { "allowMultiline": false }, "children": true }],
     "import/prefer-default-export": "off",
-    "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }]
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["webpack.config.js"] }
+    ]
   },
   "overrides": [
     {
@@ -24,7 +27,10 @@
         "airbnb-typescript",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking"
-      ]
+      ],
+      "rules": {
+        "@typescript-eslint/no-misused-promises": ["error", { "checksVoidReturn": false }]
+      }
     }
   ],
   "settings": {

@@ -1,0 +1,5 @@
+@import "@dynamic-framework/ui-react/src/style/abstracts/+import";
+
+body {
+  background-color: rgb(var(--#{$prefix}secondary-soft-rgb));
+}
