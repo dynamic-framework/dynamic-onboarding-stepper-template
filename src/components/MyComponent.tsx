@@ -1,11 +1,9 @@
-import { useState /* lazy, Suspense */ } from 'react';
+import { useState } from 'react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { DIcon, DButton } from '@dynamic-framework/ui-react';
 
 import MyLogos from './MyLogos';
-
-// const MyLogos = lazy(() => import('./MyLogos'));
 
 export default function MyComponent() {
   const { t } = useTranslation();
@@ -29,11 +27,7 @@ export default function MyComponent() {
         text="Click me!"
         size="lg"
       />
-      {showLogos && (
-        // <Suspense fallback={null}>
-        <MyLogos />
-        // </Suspense>
-      )}
+      {showLogos && <MyLogos />}
       <div className="w-100 row mt-8">
         <div className="col mb-4">
           <a
