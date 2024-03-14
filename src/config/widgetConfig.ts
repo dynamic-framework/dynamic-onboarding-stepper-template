@@ -8,3 +8,8 @@ export const VARS_CURRENCY = {
   separator: liquidParser.parse('{{vars.currency-separator}}'),
   decimal: liquidParser.parse('{{vars.currency-decimal}}'),
 };
+
+export const CONTEXT_CONFIG = {
+  language: SITE_LANG,
+  currency: VARS_CURRENCY,
+};

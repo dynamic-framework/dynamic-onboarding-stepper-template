@@ -12,7 +12,7 @@ export default function MyComponent() {
   return (
     <div
       className={classNames(
-        'd-flex flex-column gap-3',
+        'd-flex flex-column gap-4',
         'align-items-center justify-content-center',
       )}
     >
@@ -28,11 +28,11 @@ export default function MyComponent() {
         size="lg"
       />
       {showLogos && <MyLogos />}
-      <div className="w-100 row mt-8">
-        <div className="col mb-4">
+      <div className="w-100 row mt-14">
+        <div className="col mb-6">
           <a
             href="https://docs.modyo.com/en/dynamic/"
-            className="text-decoration-none p-4 card flex-row border h-100"
+            className="text-decoration-none p-6 card flex-row border h-100"
             target="_blank"
             rel="noreferrer"
           >
@@ -43,16 +43,16 @@ export default function MyComponent() {
               size="30px"
               theme="secondary"
             />
-            <div className="ms-3">
+            <div className="ms-4">
               <p className="fs-5 fw-bold text-dark mb-1">Learn</p>
-              <p className="text-muted">Get started with Dynamic Framework!</p>
+              <p className="mb-0 text-muted">Get started with Dynamic Framework!</p>
             </div>
           </a>
         </div>
-        <div className="col mb-4">
+        <div className="col mb-6">
           <a
             href="https://docs.modyo.com/en/dynamic/ui/theming.html"
-            className="text-decoration-none p-4 card flex-row border h-100"
+            className="text-decoration-none p-6 card flex-row border h-100"
             target="_blank"
             rel="noreferrer"
           >
@@ -63,16 +63,16 @@ export default function MyComponent() {
               size="30px"
               theme="secondary"
             />
-            <div className="ms-3">
+            <div className="ms-4">
               <p className="fs-5 fw-bold text-dark mb-1">Themes</p>
-              <p className="text-muted">Learn how to create a unique look-and-feel!</p>
+              <p className="mb-0 text-muted">Learn how to create a unique look-and-feel!</p>
             </div>
           </a>
         </div>
-        <div className="col mb-4">
+        <div className="col mb-6">
           <a
             href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
-            className="text-decoration-none p-4 card flex-row border h-100"
+            className="text-decoration-none p-6 card flex-row border h-100"
             target="_blank"
             rel="noreferrer"
           >
@@ -83,9 +83,9 @@ export default function MyComponent() {
               size="30px"
               theme="secondary"
             />
-            <div className="ms-3">
+            <div className="ms-4">
               <p className="fs-5 fw-bold text-dark mb-1">Experiences</p>
-              <p className="text-muted">Explore the fully React-based templates</p>
+              <p className="mb-0 text-muted">Explore the fully React-based templates</p>
             </div>
           </a>
         </div>
