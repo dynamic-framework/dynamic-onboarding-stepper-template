@@ -1,20 +1,17 @@
 import { useDContext } from '@dynamic-framework/ui-react';
 import { useEffect } from 'react';
 import MyComponent from './components/MyComponent';
-import { SITE_LANG, VARS_CURRENCY } from './config/widgetConfig';
+import { CONTEXT_CONFIG } from './config/widgetConfig';
 
 export default function App() {
   const { setContext } = useDContext();
 
   useEffect(() => {
-    setContext({
-      language: SITE_LANG,
-      currency: VARS_CURRENCY,
-    });
+    setContext(CONTEXT_CONFIG);
   }, [setContext]);
 
   return (
-    <div className="border border-1 container my-8 p-8 rounded shadow-sm">
+    <div className="border border-1 container my-14 p-14 rounded shadow-sm">
       <MyComponent />
     </div>
   );
