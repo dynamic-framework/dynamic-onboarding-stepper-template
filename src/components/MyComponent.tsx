@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
-import { DIcon, DButton } from '@dynamic-framework/ui-react';
+import { DButton } from '@dynamic-framework/ui-react';
 
 import MyLogos from './MyLogos';
+import MyLink from './MyLink';
 
 export default function MyComponent() {
   const { t } = useTranslation();
@@ -30,64 +31,28 @@ export default function MyComponent() {
       {showLogos && <MyLogos />}
       <div className="w-100 row mt-14">
         <div className="col mb-6">
-          <a
+          <MyLink
             href="https://docs.modyo.com/en/dynamic/"
-            className="text-decoration-none p-6 card flex-row border h-100"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <DIcon
-              circleSize="calc(var(--bs-icon-component-size) * 1)"
-              hasCircle
-              icon="book"
-              size="30px"
-              theme="secondary"
-            />
-            <div className="ms-4">
-              <p className="fs-5 fw-bold text-dark mb-1">Learn</p>
-              <p className="mb-0 text-muted">Get started with Dynamic Framework!</p>
-            </div>
-          </a>
+            icon="book"
+            title="Learn"
+            description="Get started with Dynamic Framework!"
+          />
         </div>
         <div className="col mb-6">
-          <a
+          <MyLink
             href="https://docs.modyo.com/en/dynamic/ui/theming.html"
-            className="text-decoration-none p-6 card flex-row border h-100"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <DIcon
-              circleSize="calc(var(--bs-icon-component-size) * 1)"
-              hasCircle
-              icon="brush"
-              size="30px"
-              theme="secondary"
-            />
-            <div className="ms-4">
-              <p className="fs-5 fw-bold text-dark mb-1">Themes</p>
-              <p className="mb-0 text-muted">Learn how to create a unique look-and-feel!</p>
-            </div>
-          </a>
+            icon="brush"
+            title="Themes"
+            description="Learn how to create a unique look-and-feel!"
+          />
         </div>
         <div className="col mb-6">
-          <a
+          <MyLink
             href="https://docs.modyo.com/en/dynamic/experiences/retail/dashboard.html"
-            className="text-decoration-none p-6 card flex-row border h-100"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <DIcon
-              circleSize="calc(var(--bs-icon-component-size) * 1)"
-              hasCircle
-              icon="layout-text-window"
-              size="30px"
-              theme="secondary"
-            />
-            <div className="ms-4">
-              <p className="fs-5 fw-bold text-dark mb-1">Experiences</p>
-              <p className="mb-0 text-muted">Explore the fully React-based templates</p>
-            </div>
-          </a>
+            icon="layout-text-window"
+            title="Experiences"
+            description="Explore the fully React-based templates"
+          />
         </div>
       </div>
     </div>

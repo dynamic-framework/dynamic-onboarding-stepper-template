@@ -1,4 +1,4 @@
-import { useDContext } from '@dynamic-framework/ui-react';
+import { DCard, useDContext } from '@dynamic-framework/ui-react';
 import { useEffect } from 'react';
 import MyComponent from './components/MyComponent';
 import { CONTEXT_CONFIG } from './config/widgetConfig';
@@ -11,8 +11,10 @@ export default function App() {
   }, [setContext]);
 
   return (
-    <div className="border border-1 container my-14 p-14 rounded shadow-sm">
-      <MyComponent />
-    </div>
+    <DCard className="container my-14">
+      <DCard.Body className="p-14">
+        <MyComponent />
+      </DCard.Body>
+    </DCard>
   );
 }
