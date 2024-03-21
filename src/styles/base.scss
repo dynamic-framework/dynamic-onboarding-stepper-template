@@ -1,5 +1,32 @@
 @import "@dynamic-framework/ui-react/src/style/abstracts/+import";
 
-body {
-  background-color: rgb(var(--#{$prefix}secondary-soft-rgb));
+.onboarding-stepper {
+  height: 100%;
+}
+
+.custom-stepper {
+  /* Icon value */
+  --#{$prefix}step-icon-container-color: var(--#{$prefix}gray-500);
+  --#{$prefix}step-icon-container-background-color: var(--#{$prefix}gray-300);
+  --#{$prefix}step-icon-container-border-color: var(--#{$prefix}gray-200);
+  --#{$prefix}step-icon-container-border-width: 2px;
+
+  /* Line union */
+  --#{$prefix}step-line-color: var(--#{$prefix}gray-300);
+  --#{$prefix}step-line-stroke: 2px;
+
+  .d-step {
+    font-weight: 700;
+
+    .d-step-label {
+      font-size: var(--#{$prefix}ref-fs-6);
+    }
+  }
+
+  .d-step-value:has(.d-step-check, .d-step-current)::after {
+    --bs-step-line-color: var(--#{$prefix}secondary);
+    // width: 4px;
+    // background-clip: padding-box;
+    // background-image: linear-gradient(to bottom, #ff0000 50%, yellow 50%);
+  }
 }
