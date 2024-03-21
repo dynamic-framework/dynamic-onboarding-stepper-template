@@ -25,8 +25,5 @@
 
   .d-step-value:has(.d-step-check, .d-step-current)::after {
     --bs-step-line-color: var(--#{$prefix}secondary);
-    // width: 4px;
-    // background-clip: padding-box;
-    // background-image: linear-gradient(to bottom, #ff0000 50%, yellow 50%);
   }
 }
