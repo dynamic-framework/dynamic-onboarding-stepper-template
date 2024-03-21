@@ -8,6 +8,7 @@
     "currency-symbol": "$",
     "currency-precision": 2,
     "currency-separator": ".",
-    "currency-decimal": ","
+    "currency-decimal": ",",
+    "current-step": 3
   }
 }
