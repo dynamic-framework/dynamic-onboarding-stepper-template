@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "My Site",
+    "name": "Onboarding Stepper",
     "language": "en",
     "url": "https://un.modyo.cloud/testing"
   },
@@ -8,8 +8,6 @@
     "currency-symbol": "$",
     "currency-precision": 2,
     "currency-separator": ".",
-    "currency-decimal": ",",
-    "dashboard-path": "#",
-    "other-var": "Some value"
+    "currency-decimal": ","
   }
 }

@@ -1,6 +1,5 @@
-import { DCard, useDContext } from '@dynamic-framework/ui-react';
+import { useDContext } from '@dynamic-framework/ui-react';
 import { useEffect } from 'react';
-import MyComponent from './components/MyComponent';
 import { CONTEXT_CONFIG } from './config/widgetConfig';
 
 export default function App() {
@@ -11,10 +10,6 @@ export default function App() {
   }, [setContext]);
 
   return (
-    <DCard className="container my-14">
-      <DCard.Body className="p-14">
-        <MyComponent />
-      </DCard.Body>
-    </DCard>
+    <h1>Stepper</h1>
   );
 }

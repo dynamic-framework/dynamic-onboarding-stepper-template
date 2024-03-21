@@ -1,6 +1,6 @@
 {
-  "name": "@dynamic-framework/dynamic-react-base-template",
-  "version": "0.3.0",
+  "name": "@dynamic-framework/dynamic-onboarding-stepper",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@dynamic-framework/ui-react": "^1.18.0",
@@ -87,5 +87,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=18.18"
   }
 }
