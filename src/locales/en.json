@@ -1,3 +1,14 @@
 {
-  "title": "Welcome to Dynamic Framework + React"
+  "label":{
+    "1": "Step 1",
+    "2": "Step 2",
+    "3": "Step 3",
+    "4": "Step 4"
+  },
+  "description": {
+    "1": "User register",
+    "2": "Identity validation",
+    "3": "Address and work data",
+    "4": "Contract signing and product delivery"
+  }
 }
