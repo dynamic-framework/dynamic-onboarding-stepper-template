@@ -5,6 +5,8 @@ import liquidParser from '../utils/liquidParser';
 
 export const SITE_LANG = liquidParser.parse('{{site.language}}');
 
+export const CURRENT_STEP = Number(liquidParser.parse('{{vars.current-step}}'));
+
 export const VARS_CURRENCY = {
   symbol: liquidParser.parse('{{vars.currency-symbol}}'),
   precision: Number(liquidParser.parse('{{vars.currency-precision}}')),
