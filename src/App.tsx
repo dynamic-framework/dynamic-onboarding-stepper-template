@@ -18,7 +18,6 @@ export default function App() {
       className={classNames(
         'd-none d-md-flex',
         'justify-content-center align-items-center',
-        'bg-gray-200 rounded-end-4',
       )}
     >
       <DStepperDesktop
