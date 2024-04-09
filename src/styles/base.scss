@@ -23,7 +23,7 @@
     }
   }
 
-  .d-step-value:has(.d-step-check, .d-step-current)::after {
-    --bs-step-line-color: var(--#{$prefix}secondary);
+  .d-step-value:has(.d-step-check, .d-step-current) {
+    --#{$prefix}step-line-color: var(--#{$prefix}secondary);
   }
 }
