@@ -1,11 +1,5 @@
 {
-  "label":{
-    "1": "Step 1",
-    "2": "Step 2",
-    "3": "Step 3",
-    "4": "Step 4"
-  },
-  "description": {
+  "label": {
     "1": "User register",
     "2": "Identity validation",
     "3": "Address and work data",
