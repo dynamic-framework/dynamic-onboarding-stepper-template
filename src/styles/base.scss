@@ -8,7 +8,7 @@
   /* Icon value */
   --#{$prefix}step-icon-container-color: var(--#{$prefix}gray-500);
   --#{$prefix}step-icon-container-background-color: var(--#{$prefix}gray-300);
-  --#{$prefix}step-icon-container-border-color: var(--#{$prefix}gray-200);
+  --#{$prefix}step-icon-container-border-color: var(--#{$prefix}gray-100);
   --#{$prefix}step-icon-container-border-width: 2px;
 
   /* Line union */
@@ -23,7 +23,7 @@
     }
   }
 
-  .d-step-value:has(.d-step-check, .d-step-current)::after {
-    --bs-step-line-color: var(--#{$prefix}secondary);
+  .d-step-value:has(.d-step-check, .d-step-current) {
+    --#{$prefix}step-line-color: var(--#{$prefix}secondary);
   }
 }
