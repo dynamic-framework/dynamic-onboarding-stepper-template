@@ -1,4 +1,8 @@
-import { DButton, DStepperDesktop, useDContext } from '@dynamic-framework/ui-react';
+import {
+  DButton,
+  DStepperDesktop,
+  useDContext,
+} from '@dynamic-framework/ui-react';
 import { useEffect, useMemo } from 'react';
 import classNames from 'classnames';
 import { CONTEXT_CONFIG, CURRENT_STEP } from './config/widgetConfig';
