@@ -2,28 +2,24 @@
 
 .onboarding-stepper {
   height: 100%;
-}
 
-.custom-stepper {
-  /* Icon value */
-  --#{$prefix}step-icon-container-color: var(--#{$prefix}gray-500);
-  --#{$prefix}step-icon-container-background-color: var(--#{$prefix}gray-300);
-  --#{$prefix}step-icon-container-border-color: var(--#{$prefix}gray-100);
-  --#{$prefix}step-icon-container-border-width: 2px;
+  .custom-stepper {
+    /* Icon value */
+    --#{$prefix}step-icon-container-color: var(--#{$prefix}gray-500);
+    --#{$prefix}step-icon-container-background-color: var(--#{$prefix}gray-300);
+    --#{$prefix}step-icon-container-border-color: var(--#{$prefix}gray-100);
+    --#{$prefix}step-icon-container-border-width: 2px;
 
-  /* Line union */
-  --#{$prefix}step-line-color: var(--#{$prefix}gray-300);
-  --#{$prefix}step-line-stroke: 2px;
+    /* Line union */
+    --#{$prefix}step-line-color: var(--#{$prefix}gray-300);
+    --#{$prefix}step-line-stroke: 2px;
 
-  .d-step {
-    font-weight: 700;
-
-    .d-step-label {
-      font-size: var(--#{$prefix}ref-fs-6);
+    .d-step-icon-container {
+      font-weight: var(--#{$prefix}fw-bold);
     }
-  }
 
-  .d-step-value:has(.d-step-check, .d-step-current) {
-    --#{$prefix}step-line-color: var(--#{$prefix}secondary);
+    .d-step-value:has(.d-step-check, .d-step-current) {
+      --#{$prefix}step-line-color: var(--#{$prefix}secondary);
+    }
   }
 }
