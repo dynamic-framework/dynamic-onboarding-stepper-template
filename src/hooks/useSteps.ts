@@ -9,22 +9,18 @@ export const useSteps = () => {
     {
       value: 1,
       label: t('label.1'),
-      description: t('description.1'),
     },
     {
       value: 2,
       label: t('label.2'),
-      description: t('description.2'),
     },
     {
       value: 3,
       label: t('label.3'),
-      description: t('description.3'),
     },
     {
       value: 4,
       label: t('label.4'),
-      description: t('description.4'),
     },
   ], [t]);
 
