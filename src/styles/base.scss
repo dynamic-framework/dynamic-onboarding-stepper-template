@@ -19,7 +19,7 @@
     }
 
     .d-step-value:has(.d-step-check, .d-step-current) {
-      --#{$prefix}step-line-color: var(--#{$prefix}secondary);
+      --#{$prefix}step-icon-container-border-width: 0;
     }
   }
 }
