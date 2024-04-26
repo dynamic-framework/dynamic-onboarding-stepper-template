@@ -4,5 +4,7 @@
     "2": "Identity validation",
     "3": "Address and work data",
     "4": "Contract signing and product delivery"
-  }
+  },
+  "currentStep": "Step {current}",
+  "limitStep": " of {total}"
 }

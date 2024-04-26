@@ -5,12 +5,14 @@ import {
 } from '@dynamic-framework/ui-react';
 import { useEffect, useMemo } from 'react';
 import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 import { CONTEXT_CONFIG, CURRENT_STEP } from './config/widgetConfig';
 import { useSteps } from './hooks/useSteps';
 
 export default function App() {
   const { setContext } = useDContext();
   const { steps } = useSteps();
+  const { t } = useTranslation();
 
   if (CURRENT_STEP > steps.length || CURRENT_STEP < 1) {
     throw new Error(`CURRENT_STEP is not valid in the range 1 to ${steps.length}`);
@@ -49,9 +51,9 @@ export default function App() {
         />
         <p className="d-flex flex-wrap align-items-center gap-2">
           <span className="text-secondary-500 fw-bold fs-6">
-            {`Step ${CURRENT_STEP}`}
+            {t('currentStep', { current: CURRENT_STEP })}
           </span>
-          <small className="text-gray-500">{` of ${step.limit}`}</small>
+          <small className="text-gray-500">{t('limitStep', { total: step.limit })}</small>
           <span className="vr text-gray-200" />
           <small className="text-gray-500">{step.label}</small>
         </p>
